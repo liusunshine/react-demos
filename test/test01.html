@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class 1</title>
+    <!--以下库必须首先加载-->
+    <!--react核心库-->
+    <script src="../build/react.js"></script>
+    <!--提供与DOM相关功能-->
+    <script src="../build/react-dom.js"></script>
+    <!--jsx语法转为JavaScript语法，实际上线时放到服务器-->
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<!--使用jsx，必须加 type="text/babel"-->
+<script type="text/babel">
+    ReactDOM.render(
+        <h1>Hello,world！</h1>,
+        document.getElementById('example')
+    );
+</script>
+</body>
+</html>

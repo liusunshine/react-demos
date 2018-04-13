@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class 2</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    var names = ['Alice','Emily','Kate'];
+    ReactDOM.render(
+        <div>
+            {
+                names.map(function(name){
+                    return <div>Hello,{name}!</div>
+                })
+            }
+        </div>,
+        document.getElementById('example')
+    )
+//    jsx基本语法规则：遇到HTML标签（以<开头），用HTML规则解析；遇到代码块（以{开头），就用JavaScript规则解析。
+//    jsx语法，允许HTML与JavaScript的混写
+</script>
+</body>
+</html>
