@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class 9</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    var Input = React.createClass({
+        getInitialState: function () {
+            return {value: 'Hello!'};
+        },
+        handleChange: function (event) {
+            this.setState({value: event.target.value});
+        },
+        render: function () {
+            var value = this.state.value;
+            return(
+                <div>
+                    <input type="text" value={value} onChange={this.handleChange}/>
+                    <p>{value}</p>
+                </div>
+            );
+        }
+    });
+    ReactDOM.render(<Input/>,document.getElementById('example'))
+//    上面代码中，文本输入框的值，不能用this.props.value 读取，而要定义一个onChange事件的回调函数，通过event.taget.value读取用户输入的值。
+//    textarea元素、select元素、radio元素都属于这种情况，更多介绍请参考官方文档
+</script>
+</body>
+</html>
