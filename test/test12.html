@@ -50,6 +50,9 @@
         <RepoList promise={$.getJSON('http://api.github.com/search/repositories?q=javascript&sort=stars')}/>,
         document.getElementById('example')
     );
+//    上面代码从GitHub的api抓取数据，然后将promise对象作为属性，传给repolist组件。
+//    如果promise对象正在抓取数据（pending状态），组件显示“正在加载”；如果promise对象报错（rejected状态），组件显示报错信息；
+//    如果promise对象抓取数据成功（fullfilled状态），组件显示获取的数据
 </script>
 </body>
 </html>
