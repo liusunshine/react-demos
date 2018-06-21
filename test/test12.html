@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>class 12</title>
+    <title>Promise对象</title>
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
@@ -30,9 +30,9 @@
             }
             else{
                 var repos = this.state.data.items;
-                var repoList = repos.map(function (repo) {
+                var repoList = repos.map(function (repo, index) {
                     return(
-                        <li>
+                        <li key={index}>
                             <a href={repo.html_url}>{repo.name}</a>({repo.stargazers_count} stars <br/> {repo.description})
                         </li>
                     );

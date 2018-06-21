@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>class 5</title>
+    <title>this.props.children</title>
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
@@ -33,7 +33,7 @@
 //    this.props.children,表示组件的所有子节点
 //    NotesList组件有2个span子节点，可通过this.props.children读取
 //    this.props.children的值有三种可能：如果当前组件没有子节点，它就是undefined；如果有一个子节点，数据类型是object；如果有多个子节点，数据类型就是array。
-//    react提供一个工具方法R挖冲突。children来处理this.props.children。可用this.props.children。map来遍历子节点，而不用担心this.props.children的数据类型是undefined还是object。更多React.Children方法，请参考官方文档。
+//    react提供一个工具方法React.Children来处理this.props.children。可用React.Children.map来遍历子节点，而不用担心this.props.children的数据类型是undefined还是object。更多React.Children方法，请参考官方文档。
 </script>
 </body>
 </html>

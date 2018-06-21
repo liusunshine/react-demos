@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>class 10</title>
+    <title>组件的生命周期</title>
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
@@ -20,7 +20,7 @@
 //    componentWillUnmount()
 //    此外，React还提供两种特殊状态的处理函数。
 //    componentWillReceiveProps(object nextProps) 已加载组件收到新的参数时调用
-//    shouldComponentUpdate(object nextProps, object nextState)
+//    shouldComponentUpdate(object nextProps, object nextState) 组件判断是否重新渲染时调用
     var Hello = React.createClass({
         getInitialState: function () {
             return {

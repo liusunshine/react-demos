@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>class 7</title>
+    <title>this.state</title>
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
@@ -30,8 +30,8 @@ ReactDOM.render(
     <LikeButton />,
     document.getElementById('example')
 )
-//    上面代码是一个likebutton组件，它的getinitialstate方法用于定义初始状态，也就是一个对象，这个对象可以通过this.state属性读取。当用户点击组件，导致状态变化，this.setstate方法就修改状态值，每次修改后，自动调用this.render方法，再次渲染组件。
-
+//    上面代码是一个likebutton组件，它的getinitialstate方法用于定义初始状态，也就是一个对象，这个对象可以通过this.state属性读取。
+//    当用户点击组件，导致状态变化，this.setstate方法就修改状态值，每次修改后，自动调用this.render方法，再次渲染组件。
 //    由于this.props和this.state都用于描述组件的特性，可能会产生混淆。区分方法，this.props表示那些一旦定义，就不再改变的特性，而this.state是会随着用户互动而产生变化的特性。
 </script>
 <div id="react1"></div>
